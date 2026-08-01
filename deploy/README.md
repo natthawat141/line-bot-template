@@ -42,7 +42,7 @@ e.g. put Caddy or nginx TLS in front, or keep ngrok for a quick demo).
 | What | URL |
 |---|---|
 | LINE webhook | `http://<vm-ip>/webhook` |
-| Admin (Filament) | `http://<vm-ip>/` |
+| Admin (Inertia+React) | `http://<vm-ip>/` |
 | Grafana (logs + metrics) | `http://<vm-ip>:3000` — login `admin` / `GRAFANA_ADMIN_PASSWORD` |
 
 Grafana comes with **Loki** (logs) and **Prometheus** (metrics) datasources

@@ -16,7 +16,7 @@ LINE user -> LINE Messaging API -> line-bot-service (FastAPI)
                                         |  webhook, signature check, dedup
                                         |  OpenRouter (LLM) for natural replies
                                         v
-                                 line-bot-management (Laravel/Filament)
+                                 line-bot-management (Laravel/Inertia+React)
                                         |  admin CRUD, Excel import/export
                                         |  read-only Knowledge API (bearer token)
                                         v
@@ -28,7 +28,7 @@ LINE user -> LINE Messaging API -> line-bot-service (FastAPI)
 | Path | What |
 |---|---|
 | `line-bot-service/` | FastAPI bot — LINE webhook, OpenRouter, knowledge grounding, Flex messages |
-| `line-bot-management/` | Laravel/Filament — admin CRUD, Excel import/export, Knowledge read API, analytics sink |
+| `line-bot-management/` | Laravel/Inertia+React — admin CRUD, Excel import/export, Knowledge read API, analytics sink |
 | `deploy/` | nginx config, observability stack config, VM bootstrap script |
 | `docker-compose.yml` | Local demo stack (SQLite, single command) |
 | `docker-compose.prod.yml` | Production stack (MySQL, nginx, monitoring) |
